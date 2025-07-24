@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Vote App</title></head>
+<body>
+  <h1>Vote your favorite!</h1>
+  <form method="post">
+    <button name="vote" value="Cat">Cat</button>
+    <button name="vote" value="Dog">Dog</button>
+    <button name="vote" value="Mouse">Mouse</button>
+  </form>
+  <h2>Results:</h2>
+  <ul>
+    <li>Cat: {{ votes['Cat'] }}</li>
+    <li>Dog: {{ votes['Dog'] }}</li>
+    <li>Mouse: {{ votes['Mouse'] }}</li>
+  </ul>
+</body>
+</html>
+
