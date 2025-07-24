@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/YOUR_USERNAME/docker-vote-app.git'
+                git 'https://github.com/orvencasido/voting-web-app.git'
             }
         }
 
