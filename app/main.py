@@ -12,12 +12,6 @@ def index():
     votes = {animal: r.get(animal) or 0 for animal in ['Cat', 'Dog', 'Mouse']}
     return render_template('index.html', votes=votes)
 
-@app.route('/github-webhook', methods=['POST'])
-def github_webhook():
-    # Just return a simple 200 OK for now to let GitHub know it's working
-    return 'Webhook received!', 200
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
